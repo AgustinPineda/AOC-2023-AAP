@@ -36,34 +36,6 @@ function find_last_digit(line::AbstractString)
     end
 end
 
-# function find_first_word(str::AbstractString, dictionary::Dict)
-#     # Returns the digit character of the first digit spelled as a word
-#     for i in 1:length(str)
-#         for key in keys(dictionary)
-#             if str[i:(i+length(key)-1)] == key
-#                 return(dictionary[key])
-#             end
-#         end
-#     end
-# end
-# 
-# function find_last_word(str::AbstractString, dictionary::Dict)
-#     # Returns the index of the last digit spelled as a word
-#     # TODO: modify find_first_word to find_last_word without
-#     #       going to a string index that doesn't exist
-#     for i in length(str):-1:1
-#         for key in keys(dictionary)
-#             if i+length(key)-1 <= length(str)
-#                 if str[i:(i+length(key)-1)] == key
-#                     # Not sure if better to return the dictionary value
-#                     # or the index
-#                     return(dictionary[key])
-#                 end
-#             end
-#         end
-#     end
-# end
-
 cal_doc = open("TrebuchetData.txt")
 lines = readlines(cal_doc)
 
